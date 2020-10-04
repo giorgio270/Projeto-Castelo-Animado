@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b96aff0d-a5ca-47c4-b2ee-0d96296e795e/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/CasteloAnimado",
+    "appService.deploySubpath": "."
+}

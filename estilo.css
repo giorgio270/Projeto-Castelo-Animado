@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url(imagens/bg.png);
+    background-size: auto;
+    background-repeat: repeat;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.menu{
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px;
+    width: 300px;
+    height: 45px;
+    float: right;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul a{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    font-family: "Comic Sans MS";
+}
+
+.menu ul a:hover{
+    font-size: 19px !important;
+    color: #1A1B1B;
+    text-shadow: white 1px 1px 1px;
+}
+
+
+
+
+.geral{
+    width: 1024px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.conteudo{
+    width: 100%;
+    height: 765px;
+    display: block;
+    margin-top: 30%;
+}
+
+
+
+
+
+
+.bloco01{
+    width: 100%;
+    height: auto;
+    display: inline-block; 
+}
+
+.bloco02{        
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.bloco03{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.imagem01, .imagem02, .imagem03{   
+    margin-left: 55px;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+
+.imagem04, .imagem05, .imagem06{
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    display: inline-block; 
+    box-shadow: 0px 0px 10px;
+}
+
+.imagem04 img, .imagem05 img, .imagem06 img{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border: black solid 1px;
+}
+
+.texto01, .texto02, .texto03{    
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    margin-left: 32.5px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 300px;
+    height: 100px;
+    border: black solid 1px;
+    float: left;
+    display: inline-block;
+    background-color: white;
+}
+
+.bloco03 span{
+    font-size:25px;
+    font-family: "Comic Sans MS";
+}

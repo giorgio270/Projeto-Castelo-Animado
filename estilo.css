@@ -2,8 +2,8 @@
     margin: 0;
 }
 
-body{
-    background-image: url(imagens/bg.png);
+.bodyIndex {
+    background-image: url(imagens/bgIndex.png);
     background-size: 100%;
     background-repeat: repeat;
     display: table;
@@ -11,7 +11,14 @@ body{
     height: 100%;
 }
 
-
+body {
+    background-image: url(imagens/bg.jpeg);
+    background-size: 100%;
+    background-repeat: repeat;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
 
 
 .menu{

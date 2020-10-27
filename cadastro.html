@@ -10,25 +10,28 @@
     <br/><br/>     
     <h2>Cadastro</h2>
     <div class="formCadastro">
-         <form method="post">
+         <form action="gravarusuario.php" method="post">
             Nome :<br/>
-            <input type="text" name="nome" required/><br/>
+            <input type="text" name="nome" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
             Email:<br/>
-            <input type="email" name="email" required/><br/>
+            <input type="email" name="email" maxlength="50" required/><br/>
             Senha :<br/>
             <input type="password" name="senha" required/><br/>
             Confirmar Senha :<br/>
             <input type="password" name="confirmSenha" required/><br/>
             Data de Nascimento :<br/>
-            <input type="date" name="dataNasc" required/><br/>
+            <input type="date" name="dataNasc" required min="1900-01-01"/><br/>
             Endereço :<br/>
-            <input type="text" name="endereço" required/><br/>
+            <input type="text" name="endereco" required/><br/>
             Cidade :<br/>
             <input list="listCidade" name="cidade" required/>
             <datalist id="listCidade">
-                <option>São Paulo</option>
-                <option>Rio de Janeiro</option>   <!-- Exemplos -->
                 <option>Belo Horizonte</option>
+                <option>Praia Grande</option>
+                <option>Rio de Janeiro</option>
+                <option>Santos</option>
+                <option>São Paulo</option>
+                <option>São Vicente</option>
             </datalist><br/>
             Estado :<br/>
             <input list="listEstado" name="estado" required/>
@@ -38,11 +41,11 @@
                 <option>Minas Gerais</option>
             </datalist><br/>
             CEP :<br/>
-            <input type="number" name="CEP" required/><br/>
+            <input type="number" name="cep" required/><br/>
         <br/><br/>
         <a href="index.html"><input type="button" name="cancel" value="Voltar" /></a>
         <input type="reset" name="clear" value="Limpar" />
-        <a href="cadastroCrianca.html"><input type="button" name="login" value="Avançar"/></a>
+        <a href="cadastroCrianca.html"><input type="submit" name="avancar" value="Gravar e Prosseguir"/></a>
     </form>
 </div>
 </body>

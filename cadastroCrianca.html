@@ -10,14 +10,14 @@
     <br/><br/>     
     <h2>Cadastro</h2>
     <div class="formCadastroCrianca">
-         <form name="formCadastroCrianca" method="post">
+         <form action="gravarcrianca.php" name="formCadastroCrianca" method="post">
         Nome da Criança :<br/>
-        <input type="text" name="nomeCrianca"/><br/>
+        <input type="text" name="nomeCrianca" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
         Sexo:<br/>
         <input type="radio" name="sexoM" value="M"/> Masculino
         <input type="radio" name="sexoF" value="F"/> Feminino </br>
         Data de Nascimento :<br/>
-        <input type="date" name="dataNascCrianca"/><br/>
+        <input type="date" name="dataNascCrianca" required min="2006-01-01"/><br/>
         Avisos e Novidades :<br/>
         <input type="checkbox" name="escola"/> Escola<br/>
         <input type="checkbox" name="jogos"/> Jogos<br/>

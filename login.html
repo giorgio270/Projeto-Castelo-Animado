@@ -7,19 +7,24 @@
     <title>Castelo Animado - Login</title>
 </head>
 <body>
-    <br/><br/>     
-    <h2>Login</h2>
     <div class="formLogin">
+        <h2 id="formTitle">Login</h2>
          <form name="formLogin" method="post">
-        Nome de usuario:<br/>
-        <input type="text" name="usuario"/><br/>
-        Senha:<br/>
-        <input type="password" name="senha"/><br/>
-        <h5>Esqueceu sua senha?</h5>
-        <br/><br/>
-        <a href="index.html"><input type="button" name="cancel" value="Voltar" /></a>
-        <input type="submit" name="login" value="Entrar"/>
-    </form>
-</div>
+             <div class="formHead">
+                Nome de usuario:<br/>
+                <input type="text" name="usuario"/><br/>
+                Senha:<br/>
+                <input type="password" name="senha"/><br/>
+            </div>
+            <div class="esqueci">
+                <h5><a href="">Esqueceu sua senha?</h5>
+            </div>
+            <br/><br/>
+                <div class="loginButtons">
+                    <a href="index.html"><input class="button" type="button" name="cancel" value="Voltar"/></a>
+                    <input class="button" type="submit" name="login" value="Entrar"/>
+                </div>
+        </form>
+    </div>
 </body>
 </html>

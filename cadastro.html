@@ -10,7 +10,7 @@
     <br/><br/>     
     <h2>Cadastro</h2>
     <div class="formCadastro">
-         <form action="gravarusuario.php" method="post">
+         <form action="https://casteloanimado.azurewebsites.net/gravarusuario.php" method="post">
             Nome :<br/>
             <input type="text" name="nome" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
             Email:<br/>
@@ -20,11 +20,11 @@
             Confirmar Senha :<br/>
             <input type="password" name="confirmSenha" required/><br/>
             Data de Nascimento :<br/>
-            <input type="date" name="dataNasc" required min="1900-01-01"/><br/>
+            <input type="date" name="dataNasc" min="1900-01-01"/><br/>
             Endereço :<br/>
-            <input type="text" name="endereco" required/><br/>
+            <input type="text" name="endereco" /><br/>
             Cidade :<br/>
-            <input list="listCidade" name="cidade" required/>
+            <input list="listCidade" name="cidade"/>
             <datalist id="listCidade">
                 <option>Belo Horizonte</option>
                 <option>Praia Grande</option>
@@ -34,18 +34,30 @@
                 <option>São Vicente</option>
             </datalist><br/>
             Estado :<br/>
-            <input list="listEstado" name="estado" required/>
+            <input list="listEstado" name="estado"/>
             <datalist id="listEstado">
                 <option>São Paulo</option>
                 <option>Rio de Janeiro</option> <!-- Exemplos -->
                 <option>Minas Gerais</option>
             </datalist><br/>
             CEP :<br/>
-            <input type="number" name="cep" required/><br/>
-        <br/><br/>
+            <input type="number" name="cep"/><br/>
+            Nome da Criança :<br/>
+            <input type="text" name="nomeCrianca" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
+            Sexo:<br/>
+            <input type="radio" name="sexoM" value="M"/> Masculino
+            <input type="radio" name="sexoF" value="F"/> Feminino </br>
+            Data de Nascimento :<br/>
+            <input type="date" name="dataNascCrianca" required min="2006-01-01"/><br/>
+            Avisos e Novidades :<br/>
+            <input type="checkbox" name="escola" value="1"/> Escola<br/>
+            <input type="checkbox" name="jogos" value="1"/> Jogos<br/>
+            <input type="checkbox" name="musicas" value="1"/> Músicas<br/>
+            <input type="checkbox" name="aniversario" value="1"/> Aniversário<br/>
+            <br/><br/>
         <a href="index.html"><input type="button" name="cancel" value="Voltar" /></a>
         <input type="reset" name="clear" value="Limpar" />
-        <a href="cadastroCrianca.html"><input type="submit" name="avancar" value="Gravar e Prosseguir"/></a>
+        <input type="submit" name="cadastrar" value="Cadastrar"/>
     </form>
 </div>
 </body>

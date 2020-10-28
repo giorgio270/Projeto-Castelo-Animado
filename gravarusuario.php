@@ -21,7 +21,7 @@
   $query = $dbSite->query("insert into dbo.USUARIO values ('".$nome."','".$email."','".$pass."','".$datnas."','".$endereco."','".$cidade."','".$estado."','".$cep."','".$nmcri."','".$sexo."','".$datnascri."','".$avescola."','".$avjogos."','".$avmusicas."','".$avaniver."')");
  
   if($query){
-    header('location: index.html');
+    header('location: login.html');
   }else{
     echo json_encode(false);
   }

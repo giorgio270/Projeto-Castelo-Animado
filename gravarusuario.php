@@ -16,11 +16,9 @@
         mssql_query($conexao,$sql);
         mssql_close($conexao);
     }
-  } catch (\Throwable $th) {
-      $erro = $th;
+  } catch (\Throwable $e) {
+        echo 'Exceção capturada: ',  $e->getMessage(), "\n";
   }
-
-  echo $erro;
 
   header('location: cadastro.html');
 ?>

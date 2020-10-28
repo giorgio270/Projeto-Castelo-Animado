@@ -9,12 +9,15 @@
   $estado = $_POST['estado'];
   $cep = $_POST['cep'];
   try {
+    $conexao = mssql_connect('castelo-server.database.windows.net','CasteloAdmin','AdminCastelo123','DB_CASTELO');  
     $sql = "insert into dbo.USUARIO values ('$nome','$email',$pass,'$datnas','$endereco','$cidade','$estado',$cep)";
-    $conexao = mssql_connect('castelo-server.database.windows.net','CasteloAdmin','AdminCastelo123','DB_CASTELO');
     if($conexao!=null)
     {
         mssql_query($conexao,$sql);
         mssql_close($conexao);
+    }
+    else {
+        Echo 'Falhou a conexão';
     }
   } catch (\Throwable $e) {
         echo 'Exceção capturada: ',  $e->getMessage(), "\n";

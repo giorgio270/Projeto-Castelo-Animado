@@ -5,8 +5,7 @@
 .bodyIndex {
     background-image: url(imagens/bgIndex.png);
     background-size: 100%;
-    background-repeat: repeat;
-    display: table;
+    display: table; 
     width: 100%;
     height: 100%;
 }
@@ -19,7 +18,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 
 .menu{
     background-color: whitesmoke;
@@ -49,9 +47,6 @@ body {
     text-shadow: white 1px 1px 1px;
 }
 
-
-
-
 .geral{
     width: 1024px;
     height: auto;
@@ -66,11 +61,6 @@ body {
     display: block;
     margin-top: 30%;
 }
-
-
-
-
-
 
 .bloco01{
     width: 100%;
@@ -135,4 +125,83 @@ body {
 .bloco03 span{
     font-size:25px;
     font-family: "Comic Sans MS";
+}
+
+.formLogin{
+    font-size: 33px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px;
+    background-color: white;
+    width: 400px;
+    height: 475px;
+    text-align: center;
+    border: black solid 1px;
+    margin-top: 15%;
+    margin-left: 40%;
+}   
+
+.formLogin #formTitle{
+    font-family: 'Comic Sans MS';
+    border: black groove 4px;
+    width:50%;
+    text-align: center;
+    margin-left: 25%;
+    padding-bottom: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.formLogin .formHead input{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border: black groove 3px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 75%;
+    height: 30px;
+}
+
+.formLogin .esqueci{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.formLogin .esqueci a:visited{
+    color:black;
+}
+
+.formLogin  .button{
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5% 10%;
+    text-align: center;
+    color: black;
+    font-family: 'Comic Sans MS';
+    display: inline;
+    border-radius: 50px;
+}
+
+.formLogin .button:hover{
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formLogin .loginButtons .button:first-child{
+    background-color: red;
+    float: left;
+    margin-left: 17px;
+}
+
+.formLogin .loginButtons .button{
+    background-color: green;
+    float: right;
+    margin-right: 17px;
 }

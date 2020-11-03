@@ -17,6 +17,9 @@
   $avjogos = $_POST['jogos'];
   $avmusicas = $_POST['musicas'];
   $avaniver = $_POST['aniversario'];
+  $select = $dbSite->query("select NM_EMAIL from dbo.USUARIO where NM_EMAIL = '".$email."');
+  $array = fetch_array($select);
+  $logarray = $array['email'];
 
   $query = $dbSite->query("insert into dbo.USUARIO values ('".$nome."','".$email."','".$pass."','".$datnas."','".$endereco."','".$cidade."','".$estado."','".$cep."','".$nmcri."','".$sexo."','".$datnascri."','".$avescola."','".$avjogos."','".$avmusicas."','".$avaniver."')");
  

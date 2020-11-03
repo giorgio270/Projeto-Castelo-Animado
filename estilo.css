@@ -265,7 +265,7 @@ body {
 }
 
 .formCadastro .avisosNovidades, .sexo{
-    border: black dashed 3px;
+    border: black groove 3px;
     border-collapse: separate;
     padding-bottom: 90px;
     padding-top: 10px;

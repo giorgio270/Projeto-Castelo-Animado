@@ -57,13 +57,13 @@ body {
 
 .conteudo{
     width: 100%;
-    height: 765px;
+    height: 763px;
     display: block;
     margin-top: 30%;
 }
 
 .bloco01{
-    width: 100%;
+    width: 100%;    
     height: auto;
     display: inline-block; 
 }
@@ -140,7 +140,7 @@ body {
     margin-left: 40%;
 }   
 
-.formLogin #formTitle{
+#formTitle{
     font-family: 'Comic Sans MS';
     border: black groove 4px;
     width:50%;
@@ -176,7 +176,7 @@ body {
     color:black;
 }
 
-.formLogin  .button{
+.button{
     border: none;
     text-decoration: none;
     font-size: 20px;
@@ -188,7 +188,7 @@ body {
     border-radius: 50px;
 }
 
-.formLogin .button:hover{
+.button:hover{
     font-size: 22px;
     font-weight: bold;
     cursor: pointer;
@@ -205,3 +205,86 @@ body {
     float: right;
     margin-right: 17px;
 }
+
+.formCadastro{
+    font-size: 20px;
+    padding-top: 40px;
+    box-shadow: 0px 0px 10px;
+    background-color: white;
+    width: 525px;
+    height: 1290px;
+    text-align: center;
+    border: black solid 1px;
+    margin-top: 0.2%;
+    margin-left: 35%;
+    margin-bottom: 15px;
+}
+
+.formCadastro .formHead input{
+    margin-bottom: 12px;
+}
+
+.formCadastro .formHead input{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    border: black groove 3px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 75%;
+    height: 25px;
+}
+.formCadastro .checkboxes{
+    float: left;
+    margin-left:44px
+}   
+
+.formCadastro .sexo span{
+    float: left;
+    margin-left:115px
+}
+
+.formCadastro .checkboxes label{
+    float:inline-start;
+}   
+
+.formCadastro .formButtons{
+    margin-top: 100px;
+    float: unset;
+    padding: 1% 4%;
+}
+
+#voltarCadastro{
+    font-size: 16px;
+    padding: 1% 4%;
+    display: unset;
+    float: left;
+    margin-top: -35px;
+    margin-left: 5px;
+    background-color: red;
+}
+
+.formCadastro .avisosNovidades, .sexo{
+    border: black groove 3px;
+    border-collapse: separate;
+    padding-bottom: 90px;
+    padding-top: 10px;
+    margin-bottom: -95px;
+    background-color:#D1D1D1;
+}
+
+.formCadastro .formButtons .button:first-child{
+    margin-top: 10px;
+    background-color: orange;
+    float: left;
+    margin-right: 17px;
+}
+
+.formCadastro .formButtons .button:last-child{
+    margin-top: 10px;
+    background-color: green;
+    float: right;
+    margin-left: 17px;
+}
+
+.cadastroBody{background-image: url(imagens/bgCadastro.jpeg);}

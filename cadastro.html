@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Castelo Animado - Cadastro</title>
 </head>
-<body>
-    <br/><br/>     
-    <h2>Cadastro</h2>
+<body class="cadastroBody">
+    <br/><br/>
     <div class="formCadastro">
+<<<<<<< HEAD
          <form action="https://casteloanimado.azurewebsites.net/cadastro.php" method="post">
             Nome :<br/>
             <input type="text" name="nome" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
@@ -60,5 +60,74 @@
         <input type="submit" name="cadastrar" value="Cadastrar"/>
     </form>
 </div>
+=======
+        <a href="index.html"><input type="button" class="button" id="voltarCadastro" name="cancel" value="Voltar" /></a>
+        <h2 id="formTitle">Cadastro</h2>
+            <form action="https://casteloanimado.azurewebsites.net/gravarusuario.php" method="post">
+                <div class="formHead">
+                    Nome :<br/>
+                    <input type="text" name="nome" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
+                    Email:<br/>
+                    <input type="email" name="email" maxlength="50" required/><br/>
+                    Senha :<br/>
+                    <input type="password" name="senha" required/><br/>
+                    Confirmar Senha :<br/>
+                    <input type="password" name="confirmSenha" required/><br/>
+                    Data de Nascimento :<br/>
+                    <input type="date" name="dataNasc" min="1900-01-01"/><br/>
+                    Endereço :<br/>
+                    <input type="text" name="endereco" /><br/>
+                    Cidade :<br/>
+                    <input list="listCidade" name="cidade"/>
+                    <datalist id="listCidade">
+                        <option>Belo Horizonte</option>
+                        <option>Praia Grande</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Santos</option>
+                        <option>São Paulo</option>
+                        <option>São Vicente</option>
+                    </datalist><br/>
+                    Estado :<br/>
+                    <input list="listEstado" name="estado"/>
+                    <datalist id="listEstado">
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                    </datalist><br/>
+                    CEP :<br/>
+                    <input type="number" name="cep"/><br/>
+                    Nome da Criança :<br/>
+                    <input type="text" name="nomeCrianca" maxlength="50" required pattern="[A-Za-z ]{1,50}"/><br/>
+                    <span id="nascimento">Data de Nascimento :</span><br/>
+                    <input type="date" name="dataNascCrianca" required min="2006-01-01"/><br/><br/>
+                    <div class="sexo">
+                        Sexo:<br/>
+                        <span id="masc"><input type="radio" name="sexo" value="M"/>Masculino</span>
+                        <span><input type="radio" name="sexo" value="F"/>Feminino</span>
+                    </div><br/><br/><br/><br/>
+                        <div class="avisosNovidades">
+                            Avisos e Novidades :<br/>
+                            <div class="checkboxes">
+                                <input type="checkbox" name="escola" value="1"/>
+                                <label for="escola">Escola</label>
+                            </div>
+                            <div class="checkboxes">
+                                <input type="checkbox" name="jogos" value="1"/> Jogos
+                            </div>
+                            <div class="checkboxes">
+                                <input type="checkbox" name="musicas" value="1"/> Músicas
+                            </div>
+                            <div class="checkboxes">
+                                <input type="checkbox" name="aniversario" value="1"/> Aniversário
+                            </div>  
+                        </div>
+                </div>
+                <div class="formButtons">
+                    <input type="reset" class="button" name="clear" value="Limpar" />
+                    <input type="submit" class="button" name="cadastrar" value="Cadastrar"/>
+                </div>
+            </form>
+    </div>
+>>>>>>> e4bc5db01f2ede0459cb077df03e1d6b4c5b5f15
 </body>
 </html>

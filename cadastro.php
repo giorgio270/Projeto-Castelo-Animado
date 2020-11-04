@@ -17,16 +17,31 @@
   $avjogos = $_POST['jogos'];
   $avmusicas = $_POST['musicas'];
   $avaniver = $_POST['aniversario'];
-  $select = $dbSite->query("select NM_EMAIL from dbo.USUARIO where NM_EMAIL = '".$email."');
-  $array = fetch_array($select);
-  $logarray = $array['email'];
 
-  $query = $dbSite->query("insert into dbo.USUARIO values ('".$nome."','".$email."','".$pass."','".$datnas."','".$endereco."','".$cidade."','".$estado."','".$cep."','".$nmcri."','".$sexo."','".$datnascri."','".$avescola."','".$avjogos."','".$avmusicas."','".$avaniver."')");
- 
-  if($query){
-    header('location: login.html');
-  }else{
-    echo json_encode(false);
-  }
-  
+  $query_select = "SELECT NM_EMAIL FROM dbo.USUARIO WHERE NM_EMAIL = '".$email."'";
+  $select = $dbSite->query($query_select);
+  $array = $dbSite->fetch_array($select);
+
+  if($email == "" || $email == null){
+    echo "<script language='javascript' type='text/javascript'>
+    alert('O campo email deve ser preenchido');window.location.href='
+    cadastro.html';</script>";
+    }else{
+      if(count($array) != 0){
+        echo"<script language='javascript' type='text/javascript'>
+        alert('Essa conta já existe.');window.location.
+        href='cadastro.html'</script>";
+      }else{
+        $query = $dbSite->query("insert into dbo.USUARIO values ('".$nome."','".$email."','".$pass."','".$datnas."','".$endereco."','".$cidade."','".$estado."','".$cep."','".$nmcri."','".$sexo."','".$datnascri."','".$avescola."','".$avjogos."','".$avmusicas."','".$avaniver."')");
+        if($query){
+          echo"<script language='javascript' type='text/javascript'>
+          alert('Cadastrado com sucesso!');window.location.
+          href='login.html'</script>";
+        }else{
+          echo"<script language='javascript' type='text/javascript'>
+          alert('Não foi possível cadastrar esse usuário');window.location
+          .href='cadastro.html'</script>";
+        }
+      }
+    }
 ?>

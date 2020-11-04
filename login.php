@@ -8,15 +8,16 @@
 
     if (isset($entrar)) {
 
-        $verifica = mssql_query("SELECT * FROM usuarios WHERE login =
-        '$login' AND senha = '$senha'") or die("erro ao selecionar");
-        if (mssql_num_rows($verifica)<=0){
+        $verifica = $dbSite->query("SELECT * FROM dbo.USUARIO WHERE NM_EMAIL =
+        '".$login."' AND PASSWORD_HASH = '".$senha."'");
+        $retorno = $dbSite->fetch_array();
+        if (count($retorno) == 0){
             echo"<script language='javascript' type='text/javascript'>
-            alert('Login e/ou senha incorretos');window.location
+            alert('Login e/ou senha incorretos.');window.location
             .href='login.html';</script>";
-            die();
         }else{
-            setcookie("login",$login);
+            session_start();
+            $_SESSION['login'] = $login;
             header("Location:index.php");
         }
     }
